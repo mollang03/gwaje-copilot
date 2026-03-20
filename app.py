@@ -83,6 +83,16 @@ st.set_page_config(
 
 st.markdown("""
 <style>
+    textarea {
+        font-size: 16px !important;
+        background: #ffffff !important;
+        color: #1a1a1a !important;
+        border-radius: 12px !important;
+    }
+    /* 입력창 내부 글씨 색상 강제 고정 */
+    .stTextArea textarea {
+        color: #1a1a1a !important;
+    }
     header[data-testid="stHeader"] { display: none !important; }
     #MainMenu { display: none !important; }
     footer { display: none !important; }
@@ -172,7 +182,7 @@ if st.button("🔍 분석하기", use_container_width=True):
 st.markdown("---")
 st.markdown(
     "<p style='text-align:center; color:#999; font-size:13px;'>"
-    "Powered by Gemini 2.5 Flash | 경성대학교 이형민"
+    "Powered by Gemini 2.5 Flash"
     "</p>",
     unsafe_allow_html=True,
 )
